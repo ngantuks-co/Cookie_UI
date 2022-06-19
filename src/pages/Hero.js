@@ -4,7 +4,12 @@ const Hero = () => {
   return (
     <div className="h-100">
       <div className="">
-        <img src="https://cdn.shopify.com/s/files/1/0040/2305/8561/files/2022-fathers-day-edition-black-forest-slider_2100x.jpg?v=1654338238" alt="..." className=" w-100" style={{ objectFit: "cover", position: "absolute", zIndex: "-1" }} />
+        <img
+          src="https://cdn.shopify.com/s/files/1/0040/2305/8561/files/2022-fathers-day-edition-black-forest-slider_2100x.jpg?v=1654338238"
+          alt="..."
+          className=" w-100"
+          style={{ objectFit: "cover", position: "absolute", zIndex: "-1" }}
+        />
         <div className=" ps-4" style={{ paddingTop: "500px" }}>
           <div>
             <div class="card-body mt-4">

@@ -4,13 +4,15 @@ import Home from "./pages/Home";
 import Navbar from "./pages/Navbar";
 import Hero from "./pages/Hero";
 import Testy from "./pages/Testy";
+import CategoryCake from "./pages/CategoryCake";
 
 function App() {
   return (
     <div>
-      <h1 className="container text-danger">Test</h1>
+      {/* <h1 className="container text-danger">Test</h1> */}
       <Home />
       <Hero />
+      <CategoryCake />
       <Mountly />
       <Location />
       <Testy />
