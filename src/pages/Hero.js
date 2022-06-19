@@ -1,7 +1,7 @@
 import React from "react";
-import { bsTruck } from "react-icons/bs";
-import { AiOutlineSmile, AiOutlineHeart } from "react-icons/ai";
-import { CgAwards } from "react-icons/cg";
+import { FiTruck } from "react-icons/fi";
+import { BsEmojiSmile, BsHeart } from "react-icons/bs";
+import { BiAward } from "react-icons/bi";
 
 const Hero = () => {
   const Data = [
@@ -34,13 +34,8 @@ const Hero = () => {
   return (
     <div className="h-100">
       <div className="">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0040/2305/8561/files/2022-fathers-day-edition-black-forest-slider_2100x.jpg?v=1654338238"
-          alt="..."
-          className=" w-100"
-          style={{ objectFit: "cover", position: "absolute", zIndex: "-1" }}
-        />
-        <div className=" ps-4" style={{ paddingTop: "500px" }}>
+        <img src="https://cdn.shopify.com/s/files/1/0040/2305/8561/files/2022-fathers-day-edition-black-forest-slider_2100x.jpg?v=1654338238" alt="..." className=" w-100" style={{ objectFit: "cover", position: "absolute", zIndex: "-1" }} />
+        <div className=" ps-4 mb-5" style={{ paddingTop: "600px" }}>
           <div>
             <div class="card-body mt-4">
               <h6 class="card-title">New Limited Edition</h6>
@@ -50,32 +45,45 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="container d-flex">
-        {Data.map((item) => (
-          <div key={item.id}>
-            <div className="card text-center" style={{ width: "17rem" }}>
-              <div className="card-body mt-4">
-                <h2 className="card-title mb-4">{item.name}</h2>
-                <h6 className="card-subtitle mb-2 text-bold">{item.desc}</h6>
-                <div className="d-flex justify-content-center">
-                  <div className="">
-                    <img
-                      src={item.image}
-                      alt="..."
-                      className=" w-100"
-                      style={{
-                        height: "62vh",
-                        objectFit: "cover",
-                        position: "absolute",
-                        zIndex: "-1",
-                      }}
-                    />
-                  </div>
-                </div>
+      <div className="bg-light">
+        <div className="container d-flex pt-5 pb-5 ">
+          <div className="container d-flex border-end border-warning">
+            <div className="d-flex justify-content-center align-items-center">
+              <FiTruck style={{ fontSize: "50px" }} />
+              <div className="ms-3 text-center">
+                <p className="mb-0">Delivery to PJ/KL (within 50km)</p>
+                <p className="mt-0">Free delivery available</p>
               </div>
             </div>
           </div>
-        ))}
+          <div className="container d-flex border-end border-warning">
+            <div className="d-flex justify-content-center align-items-center">
+              <BsEmojiSmile style={{ fontSize: "50px" }} />
+              <div className="ms-3 text-center">
+                <p className="mb-0">Delivery to PJ/KL (within 50km)</p>
+                <p className="mt-0">Free delivery available</p>
+              </div>
+            </div>
+          </div>{" "}
+          <div className="container d-flex border-end border-warning">
+            <div className="d-flex justify-content-center align-items-center">
+              <BsHeart style={{ fontSize: "50px" }} />
+              <div className="ms-3 text-center">
+                <p className="mb-0">Delivery to PJ/KL (within 50km)</p>
+                <p className="mt-0">Free delivery available</p>
+              </div>
+            </div>
+          </div>{" "}
+          <div className="container d-flex">
+            <div className="d-flex justify-content-center align-items-center">
+              <BiAward style={{ fontSize: "50px" }} />
+              <div className="ms-3 text-center">
+                <p className="mb-0">Delivery to PJ/KL (within 50km)</p>
+                <p className="mt-0">Free delivery available</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
