@@ -1,4 +1,5 @@
 import React from "react";
+import "./Style.css";
 
 const Mountly = () => {
   const Data = [
@@ -34,7 +35,7 @@ const Mountly = () => {
   return (
     <div className="container mb-4" style={{ marginTop: "50px" }}>
       <h1 className="d-flex justify-content-center mb-5">Mounthly Bestsellers</h1>
-      <div className="d-flex gap-3">
+      <div className="scale-up-ver-bottom d-flex gap-3 ">
         {Data.map((item) => (
           <div key={item.id}>
             <img className="img-thumbnail" src={item.image} alt={item.name} />
